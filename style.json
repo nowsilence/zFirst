@@ -12466,29 +12466,6 @@
 			"type": "line"
 		},
 		{
-			"id": "3dr_marking_line_whitedash_layer",
-			"source": "MarkingLine",
-			"source-layer": "MarkingLine",
-			"maxzoom": 22,
-			"minzoom": 18.0,
-			"layout": {
-				"line-join": "round",
-				"visibility": "visible",
-				"line-cap": "round"
-			},
-			"paint": {
-				"line-color": "#c7d447",
-				"line-opacity": ["interpolate", ["linear"],
-					["zoom"], 18, 0, 18.5, 1
-				],
-				"line-dasharray": [2, 2]
-			},
-			"filter": ["all", ["match", ["get", "lane_mark"],
-				["4 "], true, false
-			]],
-			"type": "line"
-		},
-		{
 			"id": "3dr_marking_line_turn_layer",
 			"source": "MarkingLine",
 			"source-layer": "MarkingLine",
